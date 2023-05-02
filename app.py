@@ -1,8 +1,9 @@
-from fileOperations import find_all_functions, format_generated_documentation, insert_documentation
-from documentationGenerator import makeRequest
+from src.fileOperations import find_all_functions, format_generated_documentation, insert_documentation
+from src.documentationGenerator import makeRequest
 
 prompt = "\n\ncan you generate a triple quote multiline python docstrings for this code?"
 
+# add real code to use files in commit 
 functions_to_document = find_all_functions('example-input/example-python-code.py')
 documentation_to_insert = []
 
